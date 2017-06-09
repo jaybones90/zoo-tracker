@@ -4,11 +4,16 @@ import { Animal } from './animal.model';
 @Component ({
   selector: 'animal-list',
   template: `
-  <ul>
-    <li *ngFor="let animal of childAnimalList">
-    {{animal.name}} 
-    </li>
-  </ul>
+  <div *ngFor="let animal of childAnimalList">
+    <ul>
+      <li (click)='selectedAnimal = animal'>
+      {{animal.name}}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="selectedAnimal">
+    <h3>{{selectedAnimal.name}}</h3>
+  </div>
   `
 })
 
