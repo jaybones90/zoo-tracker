@@ -11,9 +11,7 @@ import { Animal } from './animal.model';
       </li>
     </ul>
   </div>
-  <div *ngIf="selectedAnimal">
-    <h3>{{selectedAnimal.name}}</h3>
-  </div>
+  <animal-details [childSelectedAnimal]="selectedAnimal"></animal-details>
   `
 })
 
