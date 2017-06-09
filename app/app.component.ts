@@ -6,10 +6,7 @@ import { Animal } from './animal.model';
   template: `
     <div class="container">
       <h1>All The Animals In The Zoo</h1>
-      // <task-list [childTaskList]="masterTaskList" (clickSender)="editTask($event)"></task-list>
-      // <hr>
-      // <edit-task [childSelectedTask]="selectedTask" (doneButtonClickedSender)="finishedEditing()">  </edit-task>
-      // <new-task (newTaskSender)="addTask($event)"></new-task>
+      <animal-list [childAnimalList]="masterAnimalList"></animal-list>
     </div>
   `
 })
