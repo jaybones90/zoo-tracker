@@ -9,6 +9,12 @@ import { Animal } from './animal.model';
       <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
       <animal-list [childAnimalList]="masterAnimalList"></animal-list>
     </div>
+    <div>
+      <h3>Total Number Of Caretakers Required For Today</h3>
+      <div *ngFor="let animal of masterAnimalList">
+        <input [(ngModel)]="totalCaretakers += animal.caretakers">
+      </div>
+    </div>
   `
 })
 
@@ -21,7 +27,11 @@ export class AppComponent {
     new Animal('Arctic Fox', 'Moon', 2, 'Carnivore', 'Northern Trail', 5, 'Female', 'Cool Shade', 'Loud Noises')
   ];
 
+  totalCaretakers:number = 0;
+
   addAnimal(newAnimal) {
    this.masterAnimalList.push(newAnimal)
   }
+
+
 }
