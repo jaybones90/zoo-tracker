@@ -2,6 +2,11 @@
 
 This application keeps track of all the zoo animals in a zoo. It allows the user to enter new animals and their properties such as species, diet, number of required caretakers, etc. It displays all the animals for the user and allows the user to click an animal to see their specific details.  
 
+## Future Additions
+* Styling
+* Dynamically updating display for the daily total number of required caretakers
+* All the user to create custom properties for the animal
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
