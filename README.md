@@ -27,13 +27,10 @@ You will need the following things properly installed on your computer.
 ## Known Bugs
 * There are no known bugs at this time. Please feel free to send me an email or comment on my github if you come across any bugs.
 
-##Contact Info
+## Contact Info
 * Jason Ainsworth
 * Email: jasoncruze@gmail.com
 * Github: https://github.com/jaybones90
 
-##License
+## License
 * MIT © Jason Ainsworth
-
-![Screenshot 1](public/img/screenshot1.png)
-![Screenshot 2](public/img/screenshot2.png)
